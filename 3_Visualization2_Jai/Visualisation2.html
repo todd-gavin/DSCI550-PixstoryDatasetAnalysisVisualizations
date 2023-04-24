@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Language Counts Bar Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+      /* add some styling for the chart */
+      .bar {
+        fill: steelblue;
+      }
+      .axis text {
+        font-size: 14px;
+      }
+      .title {
+        font-size: 20px;
+        text-anchor: middle;
+      }
+      .legend rect {
+        fill: steelblue;
+      }
+      .legend text {
+        font-size: 14px;
+        text-anchor: start;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Language Counts Bar Chart</h1>
+    <script>
+      d3.csv("Visualisation2.csv").then(function(data) {
+        // set up scales and axes
+        var xScale = d3.scaleBand()
+                       .domain(data.map(function(d) { return d.language; }))
+                       .range([50, 750])
+                       .padding(0.1);
+        var yScale = d3.scaleLinear()
+                       .domain([0, d3.max(data, function(d) { return d.count; })])
+                       .range([550, 50]);
+
+        // create SVG element
+        var svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", 800)
+                    .attr("height", 600);
+
+        // create bars
+        svg.selectAll(".bar")
+           .data(data)
+           .enter()
+           .append("rect")
+           .attr("class", "bar")
+           .attr("x", function(d) { return xScale(d.language); })
+           .attr("y", function(d) { return yScale(d.count); })
+           .attr("width", xScale.bandwidth())
+           .attr("height", function(d) { return 550 - yScale(d.count); });
+
+        // add x-axis
+        svg.append("g")
+           .attr("class", "axis")
+           .attr("transform", "translate(0, 550)")
+           .call(d3.axisBottom(xScale))
+           .selectAll("text")
+           .attr("transform", "rotate(-90)")
+           .attr("dx", "-.8em")
+           .attr("dy", ".15em")
+           .style("text-anchor", "end");
+
+        // add y-axis
+        svg.append("g")
+           .attr("class", "axis")
+           .attr("transform", "translate(50, 0)")
+           .call(d3.axisLeft(yScale));
+
+        // add title
+        svg.append("text")
+           .attr("class", "title")
+           .attr("x", 400)
+           .attr("y", 30)
+           .text("Language Counts");
+
+        // add legend
+        var legend = svg.append("g")
+                        .attr("class", "legend")
+                        .attr("transform", "translate(600, 50)");
+        legend.append("rect")
+              .attr("x", 0)
+              .attr("y", 0)
+              .attr("width", 20)
+              .attr("height", 20);
+        legend.append("text")
+              .attr("x", 30)
+              .attr("y", 15)
+              .text("Language Counts");
+      }).catch(function(error) {
+        console.error("Error loading data:", error);
+      });
+    </script>
+  </body>
+</html>
+
