@@ -32,4 +32,4 @@ Collaborators: Daniil Abruzzese, Todd Gavin, Tania Dawood, Jai Agrawal
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
 3. Did Image Space allow you to find any similarity between the Pixstory story images that previously was not easily discernible?
 4. What type of location data showed up in your data? Any correlations not previously seen, e.g., from assignment 1?
-5. lso include your thoughts about Image Space and ImageCat – what was easy about using them? What wasn’t?
+5. Also include your thoughts about Image Space and ImageCat – what was easy about using them? What wasn’t?
