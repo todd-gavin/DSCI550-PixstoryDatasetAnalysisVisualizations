@@ -3,7 +3,15 @@ Collaborators: Daniil Abruzzese, Todd Gavin, Tania Dawood, Jai Agrawal
 
 
 
-## Visualization #1: 
+## Visualization #1: U.S. State Choropleth Chart to represent toxicity across states
+
+summary of datset preparation:
+1. Created df that filters for just the Date, Geotopic name, and Toxicity columns. 
+2. Created a list of all 50 states, then created a new df that only includes Geotopic names that match one of the 50 states. This creates a df that filters out all locations other than one of the 50 states.
+3. Created a new df that groups by state and takes the mean of the toxicity such that each row is a unique state and its respective average toxicity
+4. Added a column to rank states in terms of toxicity
+5. Finally, renamed columns to match observable template: "avg_toxicity" became "rate", "toxicity_rank" became "rank", "state" became "name"})
+
 
 
 ## Visualization #2: 
@@ -15,7 +23,7 @@ Collaborators: Daniil Abruzzese, Todd Gavin, Tania Dawood, Jai Agrawal
 ## Visualization #4: 
 
 
-## Visualization #5: Bar Chart Race
+## Visualization #5: Bar Chart Race to represent Pixstory interest engagement over time
 
 Summary of dataset preparation:
 1. Imported master dataset and dropped all columns except Interest and Date
