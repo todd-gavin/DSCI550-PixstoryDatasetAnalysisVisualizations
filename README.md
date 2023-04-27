@@ -1,7 +1,7 @@
 # DSCI550_PixstoryDatasetAnalysisVisualizations
 Collaborators: Daniil Abruzzese, Todd Gavin, Tania Dawood, Jai Agrawal
 
-
+Link to Site Visualizations: https://todd-gavin.github.io/DSCI550-PixstoryDatasetAnalysisVisualizations/ 
 
 ## Visualization #1: U.S. State Choropleth Chart to represent average toxicity across states
 
