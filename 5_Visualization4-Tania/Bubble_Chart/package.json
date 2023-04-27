@@ -1,0 +1,14 @@
+{
+  "name": "5b8001b02dad4d59",
+  "main": "5b8001b02dad4d59@394.js",
+  "version": "394.0.0",
+  "homepage": "https://observablehq.com/d/5b8001b02dad4d59",
+  "author": {
+    "name": "DSCI 550 Pixstory Visualizations ",
+    "url": "https://observablehq.com/@dsci550-daniil-jai-todd-tania"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
