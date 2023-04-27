@@ -92,9 +92,11 @@ NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet
 
 ## Report Questions
 1. Why did you select your 5 D3 visualizations?
-`Daniil, Tania, Jai`
+    -  For our visualizations, we decided to use a Word Cloud to test our hypothesis on the toxicity of PixStory, a Bubble Chart to dig deeper into the demographics and interests of our users, a word map to identify the most toxic countries in terms of toxic posts, a bar chart to get further information on interests and finally a hierarchical bar chart to better understand the proportion of narratives belonging to the different languages detected in assignment 2 on PixStory.
+
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
-`Daniil, Tania, Jai`
+    - By using features we created like Tika Lang Detect, Translated Narrative, and finding the average age of posters, we were able to use our data to determine if PixStory users were adhering to the platforms initiative of being a clean social media platform or not. Our analysis from assignments 1 to 3, has helped us prove that PixStory users are in fact adhering to the policies, and it is not a toxic platform. 
+
 3. Did Image Space allow you to find any similarity between the Pixstory story images that previously was not easily discernible?
     - Yes, Image Space, with ease, could find similar pictures within the subset of images ingested into the Image Space Program. For example, upon selecting similarity for a soccer players photo, the Image Space program could easily related soccer player photos within the same subset of images selected from. However, with more obscure images, the program was not as succesful with finding seemingly "related" images; nonetheless, even with the more obscure images, Image Space did better than any person could on sifting throught e subset to find related images. 
 4. What type of location data showed up in your data? Any correlations not previously seen, e.g., from assignment 1?
