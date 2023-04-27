@@ -3,9 +3,11 @@ Collaborators: Daniil Abruzzese, Todd Gavin, Tania Dawood, Jai Agrawal
 
 
 
-## Visualization #1: U.S. State Choropleth Chart to represent toxicity across states
+## Visualization #1: U.S. State Choropleth Chart to represent average toxicity across states
 
-summary of datset preparation:
+Description: We chose the visualization because we were curious to find out if the toxicity of posts varied accross different US states. This allowed us to make use of our toxicity features that we generated previously, and begin to answer questions around if Pixstory is accomplishing its goal as trying to be a clean social media. We found that the most toxic states are New Hampshire, Massachusetts, Ohio, and Kansas, and the least toxic states are Oregon, Nevada, and Wyoming. 
+
+Summary of datset preparation:
 1. Created df that filters for just the Date, Geotopic name, and Toxicity columns. 
 2. Created a list of all 50 states, then created a new df that only includes Geotopic names that match one of the 50 states. This creates a df that filters out all locations other than one of the 50 states.
 3. Created a new df that groups by state and takes the mean of the toxicity such that each row is a unique state and its respective average toxicity
@@ -23,7 +25,9 @@ summary of datset preparation:
 ## Visualization #4: 
 
 
-## Visualization #5: Bar Chart Race to represent Pixstory interest engagement over time
+## Visualization #5: Bar Chart Race to represent Pixstory interest engagement over time and COVID cases (divided by 10,000) over time
+
+Description: We were curious to find out how Pixstory posts varied over time in terms of their related interests. We also wanted to see how COVID cases were developing along side this. The COVID data represents COVID cases in India, which we are using as an indicator for the total COVID cases in the world. **Note: COVID cases were divided by 10,000 in order to normalize the data to be comparable with the interest variables. This all racing bars on the bar chart to be relatively similar in size**
 
 Summary of dataset preparation:
 1. Imported master dataset and dropped all columns except Interest and Date
@@ -32,10 +36,12 @@ Summary of dataset preparation:
 4. Created a function tally_interests that counted the total number of times each of the 6 top interests appeared for a given date
 5. Created a new data frame where each column represents the number of times a given interest appeared in a post
 6. Added new columns to the df that takes the cumulative value of tally_interest such that each row is the sum of the number of posts containing the given interest up until that date 
-7. Created a new df called df_observable to match the Observable template and sample data to allow for seamless import process
+7. Created a COVID case df that found the cumulative number of COVID cases in India. 
+  - Divided COVID cases by 10,000 in order to normalize the numbers to be comporable to Pixstory interest cumulative counts
+9. Created a new df called df_observable to match the Observable template and sample data to allow for seamless import process
   - Renamed the columns to 'date', 'name', 'category', 'value' 
-  - Reformatted the dataframe: for every day, each interest now represents one row rather than an interest being in a column. Thus, the same date will appear six times to represent each of the six interests. 
-  - The category variable is going to be listed as 'Interest' for every row (it's only there to match the template, we are not using different categories for this visualization)
+  - Reformatted the dataframe: for every day, each variable in the bar chart race now represents one row rather than being in a separate column. Thus, the same date will appear six times to represent each of the six interests. 
+  - The category variable is going to be listed as 'Interest' for every row (it's only there as a placeholde to match the template, we are not interested in using different categories for this visualization)
   - Saving the dataframe as a CSV and JSON file
 
 
