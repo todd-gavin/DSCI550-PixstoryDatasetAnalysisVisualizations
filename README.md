@@ -7,7 +7,7 @@ Link to Site Visualizations: https://todd-gavin.github.io/DSCI550-PixstoryDatase
 
 Description: We chose the visualization because we were curious to find out if the toxicity of posts varied accross different US states. This allowed us to make use of our toxicity features that we generated previously, and begin to answer questions around if Pixstory is accomplishing its goal as trying to be a clean social media. We found that the most toxic states are New Hampshire, Massachusetts, Ohio, and Kansas, and the least toxic states are Oregon, Nevada, and Wyoming. 
 
-Summary of datset preparation:
+Summary of dataset preparation:
 1. Created df that filters for just the Date, Geotopic name, and Toxicity columns. 
 2. Created a list of all 50 states, then created a new df that only includes Geotopic names that match one of the 50 states. This creates a df that filters out all locations other than one of the 50 states.
 3. Created a new df that groups by state and takes the mean of the toxicity such that each row is a unique state and its respective average toxicity
@@ -21,8 +21,38 @@ Summary of datset preparation:
 
 ## Visualization #3: 
 
+Description: 
+We decided to use a Word Cloud to test our hypothesis, which was that if the most popular words used by posters were flagged by the sarcasm, hate speech or GLAAD flags we created in assignment 1, the dataset was more likely to be toxic.
+
+Some Interesting Findings: 
+We found the most popular words used were: “India”, “People”, “Afghanistan”, “County” and “Life” which showed us that Pixstory is not a toxic platform. 
+
+Summary of dataset preparation:
+1. Import pandas, ramdom, nltk, random, math and from nltk.corpus import stopwords
+2. Run: nltk.download('punkt') to provide support for tokenization
+3. Updated the dataframe to be sorted by 'Date (No Timestamp)'
+4. Created subsets of 20k words
+5. Created list of 3k words from each subset from the 'Translated Narrative' column
+6. Removed the stopwords from the list 
+7. Used the top 500 words from the list to create a word cloud
+
 
 ## Visualization #4: 
+Description: 
+To dig deeper into the demographics and interests of PixStory users and how the platform was being used, we decided to create a bubble chart. The chart gave us an idea of the average age of posters for the most popular topics. 
+
+Some Interesting Findings:
+- Top interests among your audience are sports, entertainment, politics, health, food, environment, history, education, science, and inequality. 
+- The average age for most interests is around 23-24 years.
+- Bollywood-related interests are also popular in this dataset, including Bollywood, Bollywood Life, Bollywood Movies, Bollywood Music, and Bollywood Fashion.
+- COVID-19 and mental health are also popular interests in this dataset.
+- There are some interests that appear to have a lower sentiment score, including Taliban Government and Alt News.
+
+Summary of dataset preparation:
+1. Import CSV, pdandas, and statistics
+2. Created a dictorinary to store interests, average age and count 
+3. Sort interests by count in descending order
+
 
 
 ## Visualization #5: Bar Chart Race to represent Pixstory interest engagement over time and COVID cases (divided by 10,000) over time
