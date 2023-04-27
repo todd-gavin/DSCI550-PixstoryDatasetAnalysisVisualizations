@@ -79,15 +79,12 @@ We chose the visualization because we were curious to find out if the toxicity o
 4. Added a column to rank states in terms of toxicity
 5. Finally, renamed columns to match observable template: ("avg_toxicity" became "rate", "toxicity_rank" became "rank", "state" became "name")
 
-
 ## Apache Solr/Elastic Search
 `Jai`
-
 
 ## ImageSpace
 NASA JPL Memex Image Space is an open-source software tool developed by NASA's Jet Propulsion Laboratory (JPL). **It is designed to provide scalable and distributed processing for large-scale image analysis.** The Image Space tool can process petabytes of satellite images and other large-scale remote sensing data, and it uses Apache Spark for distributed computing. It also includes a range of image processing algorithms such as image segmentation, feature extraction, and object detection. Image Space is intended for use in various applications, such as environmental monitoring, disaster response, and national security. 
 - To setup and run ImageSpace, please refer to file `setup_daniil.ipynb` inside of directory `/8_Imagespace`.
-
 
 ## MEMEX GeoParser Application
 NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet Propulsion Laboratory. **It automatically extracts and geolocates information from unstructured text data using NLP techniques and machine learning algorithms.** GeoParser is primarily used for geolocating data, such as identifying the geographic coordinates of a location mentioned in a document or website. 
