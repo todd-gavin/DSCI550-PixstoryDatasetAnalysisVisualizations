@@ -29,6 +29,13 @@ Summary of datset preparation:
 
 Description: We were curious to find out how Pixstory posts varied over time in terms of their related interests. We also wanted to see how COVID cases were developing along side this. The COVID data represents COVID cases in India, which we are using as an indicator for the total COVID cases in the world. **Note: COVID cases were divided by 10,000 in order to normalize the data to be comparable with the interest variables. This all racing bars on the bar chart to be relatively similar in size**
 
+Some interesting findings: 
+- During 2020, health was the most discussed interest by a long shot. This is likely due to the fact that the COVID pandemic was raging during this time.
+- In January 2021 there was a large spike in posts from the “politics” interest, so much so that it overtook health and was the most popular interest on Pixstory at the time. We hypothesize that one contributing factor to this was the US capitol raid that occured on January 6, 2021. 
+-  The Health topic spiked at the end of September 2021. This could be partially due to the abortion ban in Texas that was making news headlines during the time
+- In 2022 sports spikes and takes lead in terms of most engaged with interest; health is no longer the favorite interest as COVID cases have vastly slowed down.
+
+
 Summary of dataset preparation:
 1. Imported master dataset and dropped all columns except Interest and Date
 2. Created a bar graph that shows the most frequent interests appearing in posts. Decided to focus on top 6 interests: sports, health, entertainment, food, politics, and education
