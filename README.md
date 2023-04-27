@@ -96,8 +96,8 @@ NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
 `Daniil, Tania, Jai`
 3. Did Image Space allow you to find any similarity between the Pixstory story images that previously was not easily discernible?
-`Todd`
+    - Yes, Image Space, with ease, could find similar pictures within the subset of images ingested into the Image Space Program. For example, upon selecting similarity for a soccer players photo, the Image Space program could easily related soccer player photos within the same subset of images selected from. However, with more obscure images, the program was not as succesful with finding seemingly "related" images; nonetheless, even with the more obscure images, Image Space did better than any person could on sifting throught e subset to find related images. 
 4. What type of location data showed up in your data? Any correlations not previously seen, e.g., from assignment 1?
 `Todd`
 5. Also include your thoughts about Image Space and ImageCat – what was easy about using them? What wasn’t?
-`Todd`
+    - The installation and setup of Image Space was diffcult, especially when trouble shooting the installation process of a Macbook M1 with ha sa arm64 chip instead of the recomended amd64/v8 chip. We believe that that Image Space repository should include more detialed instructions on trouble shooting the installation of Image Space and passible and index that describes in detial what certain errors mean. However, once the program was working, it was incredbily easy to navigate the application and find similar images.
