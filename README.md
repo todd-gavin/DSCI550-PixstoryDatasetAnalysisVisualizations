@@ -86,14 +86,22 @@ Summary of dataset preparation:
 
 
 ## ImageSpace
+NASA JPL Memex Image Space is an open-source software tool developed by NASA's Jet Propulsion Laboratory (JPL) that is designed to provide scalable and distributed processing for large-scale image analysis. The Image Space tool can process petabytes of satellite images and other large-scale remote sensing data, and it uses Apache Spark for distributed computing. It also includes a range of image processing algorithms such as image segmentation, feature extraction, and object detection. Image Space is intended for use in various applications, such as environmental monitoring, disaster response, and national security. 
+- To setup and run ImageSpace, please refer to file `setup_daniil.ipynb` inside of directory `/8_Imagespace`.
 
 
 ## MEMEX GeoParser Application
-
+NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet Propulsion Laboratory. It automatically extracts and geolocates information from unstructured text data using NLP techniques and machine learning algorithms. GeoParser is primarily used for geolocating data, such as identifying the geographic coordinates of a location mentioned in a document or website. 
+- To setup and run GeoParser Application, please refer to file `GeoParserAppSetup.md` inside of directory `/9_MEMEXGeoParser`.
 
 ## Report Questions
 1. Why did you select your 5 D3 visualizations?
+`Daniil, Tania, Jai`
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
+`Daniil, Tania, Jai`
 3. Did Image Space allow you to find any similarity between the Pixstory story images that previously was not easily discernible?
+`Todd`
 4. What type of location data showed up in your data? Any correlations not previously seen, e.g., from assignment 1?
+`Todd`
 5. Also include your thoughts about Image Space and ImageCat – what was easy about using them? What wasn’t?
+`Todd`
