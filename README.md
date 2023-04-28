@@ -105,6 +105,7 @@ NASA JPL Memex Image Space is an open-source software tool developed by NASA's J
 NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet Propulsion Laboratory. **It automatically extracts and geolocates information from unstructured text data using NLP techniques and machine learning algorithms.** GeoParser is primarily used for geolocating data, such as identifying the geographic coordinates of a location mentioned in a document or website. 
 - To setup and run GeoParser Application, please refer to file `GeoParserAppSetup.md` inside of directory `/9_MEMEXGeoParser`.
 - To view screenshots of the Geoparser application working, navigate to directory `/9_MEMEXGeoParser/GeoParserNarrativeScreenshots/`
+    - When refering to the screenshots, althought he domain name is `covid19_index`, rest assured that it is actually a random sample of 1500 narratives from the main 95k row Pixstory Social Media dataset.
 
 ## Report Questions
 1. Why did you select your 5 D3 visualizations?
