@@ -99,22 +99,21 @@ Apache Solr is a search platform that is built on top of the Apache Lucene searc
 ## ImageSpace
 NASA JPL Memex Image Space is an open-source software tool developed by NASA's Jet Propulsion Laboratory (JPL). **It is designed to provide scalable and distributed processing for large-scale image analysis.** The Image Space tool can process petabytes of satellite images and other large-scale remote sensing data, and it uses Apache Spark for distributed computing. It also includes a range of image processing algorithms such as image segmentation, feature extraction, and object detection. Image Space is intended for use in various applications, such as environmental monitoring, disaster response, and national security. 
 - To setup and run ImageSpace, please refer to file `setup_daniil.ipynb` inside of directory `/8_Imagespace`.
+- To view screenshots of the ImageSpace application working, navigate to directory `/8_ImageSpace/Apache_ImageSpace_Screenshots/`
 
 ## MEMEX GeoParser Application
 NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet Propulsion Laboratory. **It automatically extracts and geolocates information from unstructured text data using NLP techniques and machine learning algorithms.** GeoParser is primarily used for geolocating data, such as identifying the geographic coordinates of a location mentioned in a document or website. 
 - To setup and run GeoParser Application, please refer to file `GeoParserAppSetup.md` inside of directory `/9_MEMEXGeoParser`.
+- To view screenshots of the Geoparser application working, navigate to directory `/9_MEMEXGeoParser/GeoParserNarrativeScreenshots/`
 
 ## Report Questions
 1. Why did you select your 5 D3 visualizations?
     -  For our visualizations, we decided to use a Word Cloud to test our hypothesis on the toxicity of PixStory, a Bubble Chart to dig deeper into the demographics and interests of our users, a US map to identify the most toxic states in terms of average toxicity of posts, a racing bar chart to gain insights into how interest engagement varried over time along side the COVID pandemic, and finally a hierarchical bar chart to better understand the proportion of narratives belonging to the different languages detected in assignment 2 on PixStory.
-    
-
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
     - By using features we created like Tika Lang Detect, Translated Narrative, and finding the average age of posters, we were able to use our data to determine if PixStory users were adhering to the platforms initiative of being a clean social media platform or not. Our analysis from assignments 1 to 3, has helped us prove that PixStory users are in fact adhering to the policies, and it is not a toxic platform. 
-
 3. Did Image Space allow you to find any similarity between the Pixstory story images that previously was not easily discernible?
     - Yes, Image Space, with ease, could find similar pictures within the subset of images ingested into the Image Space Program. For example, upon selecting similarity for a soccer players photo, the Image Space program could easily related soccer player photos within the same subset of images selected from. However, with more obscure images, the program was not as succesful with finding seemingly "related" images; nonetheless, even with the more obscure images, Image Space did better than any person could on sifting throught e subset to find related images. 
 4. What type of location data showed up in your data? Any correlations not previously seen, e.g., from assignment 1?
-`Todd`
+    - When using the Geoparser application, the location data was similar to what was parsed from assignments 1 and 2. This makes sense because the underlying Geoparser application uses the same lucene gazetteer to extract location data. However, in this case as we are using the full Geoparser application, we can easily visualize the concentration and frequency of the extract locations of narrative from the Pixstory social media dataset. Using the Geoparser application, we can easily search specific locations and see where each Narrative is associted with location.
 5. Also include your thoughts about Image Space and ImageCat – what was easy about using them? What wasn’t?
     - The installation and setup of Image Space was diffcult, especially when trouble shooting the installation process of a Macbook M1 with ha sa arm64 chip instead of the recomended amd64/v8 chip. We believe that that Image Space repository should include more detialed instructions on trouble shooting the installation of Image Space and passible and index that describes in detial what certain errors mean. However, once the program was working, it was incredbily easy to navigate the application and find similar images.
