@@ -106,7 +106,8 @@ NASA JPL Memex GeoParser is an open-source software tool developed by NASA's Jet
 
 ## Report Questions
 1. Why did you select your 5 D3 visualizations?
-    -  For our visualizations, we decided to use a Word Cloud to test our hypothesis on the toxicity of PixStory, a Bubble Chart to dig deeper into the demographics and interests of our users, a word map to identify the most toxic countries in terms of toxic posts, a bar chart to get further information on interests and finally a hierarchical bar chart to better understand the proportion of narratives belonging to the different languages detected in assignment 2 on PixStory.
+    -  For our visualizations, we decided to use a Word Cloud to test our hypothesis on the toxicity of PixStory, a Bubble Chart to dig deeper into the demographics and interests of our users, a US map to identify the most toxic states in terms of average toxicity of posts, a racing bar chart to gain insights into how interest engagement varried over time along side the COVID pandemic, and finally a hierarchical bar chart to better understand the proportion of narratives belonging to the different languages detected in assignment 2 on PixStory.
+    
 
 2. How are they answering and showing off your features from assignments 1 and 2 and the work you did?
     - By using features we created like Tika Lang Detect, Translated Narrative, and finding the average age of posters, we were able to use our data to determine if PixStory users were adhering to the platforms initiative of being a clean social media platform or not. Our analysis from assignments 1 to 3, has helped us prove that PixStory users are in fact adhering to the policies, and it is not a toxic platform. 
