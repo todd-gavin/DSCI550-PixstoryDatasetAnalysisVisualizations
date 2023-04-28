@@ -22,4 +22,14 @@
 7. Open up Jupyter Notebook
     1. `cd $GEOPARSER_HOME/examples/covid19 && jupyter notebook`
     2. Run `Ingest COVID data.ipynb` (will take ~30-40 minutes)
+8. Go to this site to launch GeoParser app: http://localhost:8000 
+    1. Click settings
+    2. Set `Domain Name` to: `covid19_index`
+    3. Set `Indexed Engine Path` to: http://localhost:8983/solr/covid19/
+        - http://localhost:8983/solr/pixstoryData2/
+    4. Click on add index
+    5. Click add index to store the index of the domain in the database.
+    6. Click on Database Icon Tab
+    7. Click on GeoParse button, and then wait (takes ~10 minutes)
+    8. Click on View button
 
