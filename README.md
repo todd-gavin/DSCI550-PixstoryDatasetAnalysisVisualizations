@@ -30,7 +30,20 @@ We were curious to find out how Pixstory posts varied over time in terms of thei
     - Saving the dataframe as a CSV and JSON file
 
 ## Visualization #2: Language Counts Bar Chart
-`Jai`
+
+#### Description:
+We decided to use a simple Hierarchial Bar Chart to understand the split of languages used (and identified) using Tika LangDetect in Assignment #2. This would allow us to take a deeper dive into the demographics reached by PixStory. 
+
+#### Some Interesting Findings 
+- Italian, Bengali and Catalan top the list after English. This is interesting because it does not seem like these languages are as widespread in the world/on the net as they are on PixStory. We expected French etc. to take over the list. 
+- German, Slovakian, Slovenian, Danish, Dutch, all have very low counts (lower than 400) which points to the fact that PixStory may not be as popular in Europe, aside from Italy and Spain. 
+- Hindi, Bengali, Afrikaans, Indonesian all have high counts, which point the fact that PixStory may target a demographic within less developed countries 
+
+#### Summary of dataset preparation:
+1. Imported master dataset and dropped all columns except Tika LangDetect
+2. Applied .value_counts() to display counts of each language's instance detected
+3. Output the counts for visualisation
+
 
 
 ## Visualization #3: Wordcloud of Pixstory Narrative
