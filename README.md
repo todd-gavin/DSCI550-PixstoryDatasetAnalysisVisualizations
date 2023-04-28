@@ -92,8 +92,9 @@ We chose the visualization because we were curious to find out if the toxicity o
 4. Added a column to rank states in terms of toxicity
 5. Finally, renamed columns to match observable template: ("avg_toxicity" became "rate", "toxicity_rank" became "rank", "state" became "name")
 
-## Apache Solr/Elastic Search
-`Jai`
+## Apache Solr
+Apache Solr is a search platform that is built on top of the Apache Lucene search library. It is an open-source, highly scalable and fault-tolerant search engine that can be used to build applications that require full-text search and related functionalities. Solr can be used to build search engines for websites, e-commerce platforms, document management systems, and even social media platforms. It can also be used as a data processing tool to perform various tasks like data indexing, clustering, and machine learning.
+- To setup and run Apache Solr, navigate to the Solr folder and run the instructions within solrSetup.ipynb.
 
 ## ImageSpace
 NASA JPL Memex Image Space is an open-source software tool developed by NASA's Jet Propulsion Laboratory (JPL). **It is designed to provide scalable and distributed processing for large-scale image analysis.** The Image Space tool can process petabytes of satellite images and other large-scale remote sensing data, and it uses Apache Spark for distributed computing. It also includes a range of image processing algorithms such as image segmentation, feature extraction, and object detection. Image Space is intended for use in various applications, such as environmental monitoring, disaster response, and national security. 
